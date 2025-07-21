@@ -2,7 +2,7 @@
 
 #Check all the dependencies versions
 
-deepstream-app --version-all
+**deepstream-app --version-all**
 
 (pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps/deepstream-test1$ deepstream-app --version-all
 deepstream-app version 7.1.0
@@ -16,14 +16,15 @@ libNVWarp360 Version: 2.0.1d3
 
 #Locate Samples files
 
-/opt/nvidia/deepstream/deepstream-7.1/sources/
+**/opt/nvidia/deepstream/deepstream-7.1/sources/**
 
 (pr_venv) sidd@sidd:~/Documents/Projects/industry_cv_safety$ /opt/nvidia/deepstream/deepstream-7.1/sources/
 bash: /opt/nvidia/deepstream/deepstream-7.1/sources/: Is a directory
 
 #List all the files present in it
 
-(pr_venv) sidd@sidd:~/Documents/Projects/industry_cv_safety$ ls -l /opt/nvidia/deepstream/deepstream-7.1/sources/
+(pr_venv) sidd@sidd:~/Documents/Projects/industry_cv_safety$ **ls -l /opt/nvidia/deepstream/deepstream-7.1/sources/**
+
 total 36
 drwxr-xr-x  5 root root 4096 Jul 19 17:47 apps
 drwxr-xr-x 23 root root 4096 Jul 19 17:47 gst-plugins
@@ -37,7 +38,8 @@ drwxr-xr-x  4 root root 4096 Jul 19 17:47 TritonOnnxYolo
 
 #list Samples
 
-(pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps$ ls
+(pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps$ **ls**
+
 deepstream-3d-action-recognition   deepstream-audio                deepstream-image-meta-test         deepstream-nvdsanalytics-test  deepstream-test1   deepstream-transfer-learning-app
 deepstream-3d-depth-camera         deepstream-avsync               deepstream-infer-tensor-meta-test  deepstream-nvof-test           deepstream-test2   deepstream-ucx-test
 deepstream-3d-lidar-sensor-fusion  deepstream-can-orientation-app  deepstream-lidar-inference-app     deepstream-opencv-test         deepstream-test3   deepstream-user-metadata-test
@@ -47,26 +49,29 @@ deepstream-appsrc-test             deepstream-image-decode-test    deepstream-nm
 
 #Build file using
 
-sudo make
+**sudo make**
 
 #Error would be 
 
-=>(pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps/deepstream-test1$ sudo make
+=>(pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps/deepstream-test1$ **sudo make**
+
 Makefile:15: *** "CUDA_VER is not set".  Stop.
 
 #build correctly through
 
-sudo make CUDA_VER=12.2 #12.x
+**sudo make CUDA_VER=12.2 #12.x**
 
 (pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps/deepstream-test1$ sudo make CUDA_VER=12.2
+
 cc -c -o deepstream_test1_app.o -I../../../includes -I /usr/local/cuda-12.2/include -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/x86_64-linux-gnu -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include deepstream_test1_app.c
 cc -o deepstream-test1-app deepstream_test1_app.o -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -L/usr/local/cuda-12.2/lib64/ -lcudart -L/opt/nvidia/deepstream/deepstream-7.1/lib/ -lnvdsgst_meta -lnvds_meta -lnvds_yml_parser -lnvdsgst_helper -lcuda -Wl,-rpath,/opt/nvidia/deepstream/deepstream-7.1/lib/ 
 
 #Check the video sample stroed locally
 
-(pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps/deepstream-test1$ ls -l /opt/nvidia/deepstream/deepstream-7.1/samples/streams/sample_720p.h264
+(pr_venv) sidd@sidd:/opt/nvidia/deepstream/deepstream-7.1/sources/apps/sample_apps/deepstream-test1$ **ls -l /opt/nvidia/deepstream/deepstream-7.1/samples/streams/sample_720p.h264**
+
 -rw-r--r-- 1 root root 14759548 Apr 25  2023 /opt/nvidia/deepstream/deepstream-7.1/samples/streams/sample_720p.h264
 
 #Run the deepstream sample
 
-./deepstream-test1-app /opt/nvidia/deepstream/deepstream-7.1/samples/streams/sample_720p.h264
+**./deepstream-test1-app /opt/nvidia/deepstream/deepstream-7.1/samples/streams/sample_720p.h264**
