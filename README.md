@@ -1,5 +1,4 @@
 # DeepStream-Samples
-# DeepStream-Samples
 
 #Check all the dependencies versions
 deepstream-app --version-all
