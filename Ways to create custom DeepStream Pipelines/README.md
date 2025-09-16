@@ -7,7 +7,7 @@ It covers **config-based execution, command-line pipelines, and custom applicati
 
 ##  1. Prerequisites
 
-- Installed **DeepStream SDK** (follow [installation guide](../README.md))  
+- Installed **DeepStream SDK** (follow [installation guide](https://github.com/Siddh01110/DeepStream/tree/main/How%20to%20install%20DeepStream%20on%20dGPUx86)
 - NVIDIA GPU with CUDA support  
 - YOLO model converted to **TensorRT engine (`.engine`)** or **ONNX**  
 
