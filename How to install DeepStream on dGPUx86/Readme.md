@@ -82,8 +82,8 @@ source ~/.bashrc
 
 Step 3: Install cuDNN
 
-Download matching cuDNN from NVIDIA cuDNN
-.
+Download matching cuDNN from [NVIDIA cuDNN](https://developer.nvidia.com/cudnn)
+
 
 Extract and copy files:
 
@@ -96,7 +96,7 @@ sudo cp cuda/lib64/* /usr/local/cuda/lib64/
 
 Step 4: Install TensorRT
 
-Download TensorRT .deb files from NVIDIA TensorRT
+Download TensorRT .deb files from [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt)
 .
 
 Install:
@@ -110,8 +110,8 @@ sudo apt install tensorrt
 
 Step 5: Install DeepStream SDK
 
-Download DeepStream .deb package from NVIDIA DeepStream Downloads
-.
+Download DeepStream .deb package from [NVIDIA DeepStream Downloads](https://developer.nvidia.com/deepstream-sdk)
+
 
 Install:
 
@@ -132,7 +132,7 @@ deepstream-app --version-all
 DeepStream provides sample apps to test your setup.
 
 Clone my GitHub repository for a detailed walkthrough on running DeepStream samples:
-👉 Siddh01110/DeepStream-Samples
+👉 [Siddh01110/DeepStream-Samples](https://github.com/Siddh01110/)
 
 Example test:
 
@@ -156,12 +156,12 @@ You should see details of CUDA, TensorRT, cuDNN, and DeepStream.
 
 🔗 References
 
-DeepStream SDK Official Page
+[DeepStream SDK Official Page](https://developer.nvidia.com/deepstream-sdk)
 
-DeepStream SDK Release Notes (Compatibility Matrix)
+[DeepStream SDK Release Notes (Compatibility Matrix)](https://developer.nvidia.com/deepstream-getting-started)
 
-CUDA Toolkit Downloads
+[CUDA Toolkit Downloads](https://developer.nvidia.com/cuda-downloads)
 
-cuDNN Downloads
+[cuDNN Downloads](https://developer.nvidia.com/cudnn)
 
-TensorRT Downloads
+[TensorRT Downloads](https://developer.nvidia.com/tensorrt)
